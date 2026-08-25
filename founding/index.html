@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Founding Team · Computational Biology and Pre-Med Society</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--abyss:#060a14;--panel:#0b1220;--edge:#1b2740;--ice:#a9d6ff;--cyan:#4fc3ff;--dim:#7186a8;--film:#dfe6ee}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--abyss);color:var(--ice);font:16px/1.66 "IBM Plex Sans",-apple-system,sans-serif;overflow-x:hidden}
+.mono{font-family:"IBM Plex Mono",monospace}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1080px;margin:0 auto;padding:22px 28px}
+.wordmark{display:flex;align-items:center;gap:12px;color:#fff;font-weight:600;text-decoration:none}
+.wordmark svg{width:34px;height:34px}
+nav .links{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.16em}
+nav .links a{margin-left:22px;color:var(--dim);text-decoration:none}
+nav .links a:hover{color:var(--ice)}
+nav .links a.here{color:var(--cyan)}
+header.page{position:relative;overflow:hidden;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);padding:64px 0 48px;background:linear-gradient(180deg,#081022,var(--abyss))}
+header.page .octbg{position:absolute;inset:0;background:url("../refs/oct_macula.png") center 55%/cover no-repeat;opacity:.16;filter:sepia(1) hue-rotate(175deg) saturate(2.4) brightness(.95);pointer-events:none}
+header.page .inner{position:relative;z-index:1}
+header.page .inner,main{max-width:840px;margin:0 auto;padding:0 28px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.24em;color:var(--cyan)}
+h1{font-size:clamp(30px,4.2vw,50px);font-weight:300;letter-spacing:-.01em;margin:12px 0 12px;background:linear-gradient(115deg,#f0f5fb 25%,#a9d6ff 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--dim);max-width:58ch;font-size:16px}
+main{padding-bottom:90px}
+form{margin-top:46px}
+.field{margin-bottom:26px}
+label{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;color:var(--cyan);margin-bottom:9px}
+label .opt{color:var(--dim);letter-spacing:.1em}
+input[type=text],input[type=email],textarea{width:100%;background:var(--panel);border:1px solid var(--edge);color:#e6eef8;font:15px/1.55 "IBM Plex Sans",sans-serif;padding:13px 15px;outline:none}
+input:focus,textarea:focus{border-color:var(--cyan)}
+textarea{min-height:110px;resize:vertical}
+.checks{display:flex;flex-direction:column;gap:9px}
+.checks label{display:flex;align-items:flex-start;gap:11px;font-family:"IBM Plex Sans",sans-serif;font-size:14.5px;letter-spacing:0;color:var(--ice);text-transform:none;margin:0;cursor:pointer}
+.checks input{appearance:none;width:17px;height:17px;border:1px solid var(--edge);background:var(--panel);flex:none;margin-top:2px;cursor:pointer}
+.checks input:checked{background:var(--cyan);border-color:var(--cyan);box-shadow:inset 0 0 0 3px var(--abyss)}
+.checks .note-inline{color:var(--dim);font-size:12.5px}
+.cta{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.14em;color:var(--abyss);background:var(--cyan);padding:14px 30px;font-weight:600;border:0;cursor:pointer}
+.cta:disabled{opacity:.5;cursor:wait}
+.err{color:#ff9d9d;font-size:13px;margin-top:8px;display:none}
+.done{display:none;margin-top:56px;background:#04070d;border:1px solid var(--cyan);padding:44px 36px;text-align:center}
+.done h2{font-size:24px;font-weight:400;color:#d7e5f4;margin-bottom:10px}
+.done p{color:var(--dim);font-size:15px}
+.alt{font-size:12.5px;color:var(--dim);margin-top:20px}
+.alt a{color:var(--cyan)}
+footer{border-top:1px solid var(--edge);padding:32px 28px;text-align:center;color:var(--dim);font-size:12.5px}
+html,body{overflow-x:clip}
+@media(max-width:760px){
+nav{flex-direction:column;align-items:flex-start;gap:10px;padding:16px 20px}
+nav .links{display:flex;flex-wrap:wrap;row-gap:9px;font-size:10.5px;letter-spacing:.14em}
+nav .links a{margin-left:0;margin-right:16px}
+.wordmark{font-size:15px;gap:9px}
+.wordmark svg{width:27px;height:27px}
+main,header.page .inner{padding-left:20px;padding-right:20px}
+header.page{padding:48px 0 40px}
+footer{font-size:10.5px;padding:26px 18px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a class="wordmark" href="../"><svg viewBox="0 0 200 200"><line x1="18" y1="100" x2="182" y2="100" stroke="#4fc3ff" stroke-width="4" opacity=".55"/><path d="M 20 100 C 33 58 47 58 60 100 C 69 128 81 128 90 100" fill="none" stroke="#a9d6ff" stroke-width="9" stroke-linecap="round"/><g stroke="#a9d6ff" stroke-width="5"><line x1="100" y1="100" x2="100" y2="73"/><line x1="110" y1="100" x2="110" y2="66"/><line x1="120" y1="100" x2="120" y2="85"/><line x1="130" y1="100" x2="130" y2="115"/><line x1="140" y1="100" x2="140" y2="134"/><line x1="150" y1="100" x2="150" y2="127"/><line x1="170" y1="100" x2="170" y2="73"/></g><g fill="#4fc3ff"><circle cx="100" cy="73" r="7"/><circle cx="110" cy="66" r="7"/><circle cx="120" cy="85" r="7"/><circle cx="130" cy="115" r="7"/><circle cx="140" cy="134" r="7"/><circle cx="150" cy="127" r="7"/><circle cx="160" cy="100" r="5"/><circle cx="170" cy="73" r="7"/></g></svg>Computational Biology and Pre-Med Society</a>
+<div class="links"><a href="../">HOME</a><a href="../projects/">PROJECTS</a><a href="../events/">EVENTS</a><a href="../opportunities/">OPPORTUNITIES</a><a href="../founder/">FOUNDERS</a><a class="here" href="../join/">JOIN</a></div>
+</nav>
+
+<header class="page">
+<div class="octbg"></div>
+<div class="inner">
+<div class="eyebrow">FOUNDING TEAM</div>
+<h1>Help build it from day one.</h1>
+<p class="lede">We're chartering this fall: five officer seats and the first ten founding-member spots, on the record with ASU. Tell us who you are and where you'd fit. Joining as a member is just the $10 ASO fee; this form is for people who want to help build.</p>
+</div>
+</header>
+
+<main>
+<form id="ff" novalidate>
+<div class="field"><label for="fname">NAME</label><input type="text" id="fname" required></div>
+<div class="field"><label for="femail">STUDENT EMAIL</label><input type="email" id="femail" required placeholder="you@student.laccd.edu"></div>
+<div class="field"><label for="fmajor">MAJOR / INTENDED MAJOR</label><input type="text" id="fmajor" required></div>
+<div class="field"><label for="fwhy">WHY DO YOU WANT TO HELP FOUND THIS CLUB?</label><textarea id="fwhy" required></textarea></div>
+<div class="field"><label>FOUNDING ROLE INTEREST <span class="opt">· CHECK ANY</span></label>
+<div class="checks">
+<label><input type="checkbox" value="Vice President">Vice President</label>
+<label><input type="checkbox" value="Secretary">Secretary</label>
+<label><input type="checkbox" value="Treasurer">Treasurer</label>
+<label><input type="checkbox" value="ICC Representative"><span>ICC Representative <span class="note-inline">(must be free Thursdays 1–3 PM)</span></span></label>
+<label><input type="checkbox" value="Founding member, no officer seat">Founding member — no officer seat</label>
+<label><input type="checkbox" value="Open to whatever's needed">Open to whatever's needed</label>
+</div></div>
+<div class="field"><label for="fqual">WHAT WOULD MAKE YOU STRONG IN THAT ROLE? <span class="opt">· OPTIONAL</span></label><textarea id="fqual"></textarea></div>
+<div class="field"><label>AVAILABILITY <span class="opt">· CHECK ANY</span></label>
+<div class="checks" id="avail">
+<label><input type="checkbox" value="Can make 1st & 3rd Tuesday 6:30-7:30 PM hybrid">I can make 1st &amp; 3rd Tuesday, 6:30–7:30 PM (hybrid)</label>
+<label><input type="checkbox" value="Free Thursdays 1-3 PM (ICC window)">I'm free Thursdays 1–3 PM (the ICC window)</label>
+<label><input type="checkbox" value="Tight schedule but wants in">Tight schedule, but I want in</label>
+</div></div>
+<div class="field"><label for="fheard">HOW DID YOU HEAR ABOUT US? <span class="opt">· OPTIONAL</span></label><input type="text" id="fheard"></div>
+<button class="cta" type="submit" id="sbtn">SUBMIT · JOIN THE BUILD</button>
+<div class="err" id="err">Name, student email, major, and the why are required.</div>
+<p class="alt">Prefer Google's interface? <a href="https://docs.google.com/forms/d/1V4xSQ2jX6rLuJTj5Fx4D7GFNUldowUPagN4ndJ48joA/viewform">Open the raw form</a>.</p>
+</form>
+
+<div class="done" id="done">
+<h2>Got it. Sequence, together.</h2>
+<p>An officer will reach out to your student email within a few days.</p>
+</div>
+</main>
+
+<footer><span class="mono">COMPUTATIONAL BIOLOGY AND PRE-MED SOCIETY · LOS ANGELES VALLEY COLLEGE</span></footer>
+
+<script>
+(function(){
+  var ACTION="https://docs.google.com/forms/d/e/1FAIpQLSdz6lIhKShme187N5Rf5s_RVA6EpF8PnO8bCuAcVQOIqr17xw/formResponse";
+  function vals(sel){return Array.from(document.querySelectorAll(sel+" input:checked")).map(function(c){return c.value;}).join(", ");}
+  document.getElementById("ff").addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=document.getElementById("fname").value.trim(),
+        email=document.getElementById("femail").value.trim(),
+        major=document.getElementById("fmajor").value.trim(),
+        why=document.getElementById("fwhy").value.trim();
+    var err=document.getElementById("err");
+    if(!name||!email||!major||!why||email.indexOf("@")<1){err.style.display="block";return;}
+    err.style.display="none";
+    var roles=vals(".checks")||"(none checked)";
+    var avail=vals("#avail")||"(none checked)";
+    var qual=document.getElementById("fqual").value.trim();
+    var heard=document.getElementById("fheard").value.trim();
+    var fd=new FormData();
+    fd.append("entry.362751466",major);
+    fd.append("entry.1705937914","Name: "+name+"\nEmail: "+email+"\nWhy: "+why+"\nAvailability: "+avail+(heard?"\nHeard via: "+heard:""));
+    fd.append("entry.2135043680","Roles: "+roles+(qual?" | Strengths: "+qual:""));
+    var btn=document.getElementById("sbtn");btn.disabled=true;
+    fetch(ACTION,{method:"POST",mode:"no-cors",body:fd}).finally(function(){
+      document.getElementById("ff").style.display="none";
+      document.getElementById("done").style.display="block";
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+  });
+})();
+</script>
+</body>
+</html>
