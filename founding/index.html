@@ -80,6 +80,8 @@ footer{font-size:10.5px;padding:26px 18px}
 <form id="ff" novalidate>
 <div class="field"><label for="fname">NAME</label><input type="text" id="fname" required></div>
 <div class="field"><label for="femail">STUDENT EMAIL</label><input type="email" id="femail" required placeholder="you@student.laccd.edu"></div>
+<div class="field"><label for="fphone">PHONE NUMBER <span class="opt">· OPTIONAL</span></label><input type="text" id="fphone" placeholder="(818) 555-0100"></div>
+<div class="field"><label for="fig">INSTAGRAM HANDLE <span class="opt">· OPTIONAL</span></label><input type="text" id="fig" placeholder="@yourhandle"></div>
 <div class="field"><label for="fmajor">MAJOR / INTENDED MAJOR</label><input type="text" id="fmajor" required></div>
 <div class="field"><label for="fwhy">WHY DO YOU WANT TO HELP FOUND THIS CLUB?</label><textarea id="fwhy" required></textarea></div>
 <div class="field"><label>FOUNDING ROLE INTEREST <span class="opt">· CHECK ANY</span></label>
@@ -129,9 +131,11 @@ footer{font-size:10.5px;padding:26px 18px}
     var avail=vals("#avail")||"(none checked)";
     var qual=document.getElementById("fqual").value.trim();
     var heard=document.getElementById("fheard").value.trim();
+    var phone=document.getElementById("fphone").value.trim();
+    var ig=document.getElementById("fig").value.trim();
     var fd=new FormData();
     fd.append("entry.362751466",major);
-    fd.append("entry.1705937914","Name: "+name+"\nEmail: "+email+"\nWhy: "+why+"\nAvailability: "+avail+(heard?"\nHeard via: "+heard:""));
+    fd.append("entry.1705937914","Name: "+name+"\nEmail: "+email+(phone?"\nPhone: "+phone:"")+(ig?"\nInstagram: "+ig:"")+"\nWhy: "+why+"\nAvailability: "+avail+(heard?"\nHeard via: "+heard:""));
     fd.append("entry.2135043680","Roles: "+roles+(qual?" | Strengths: "+qual:""));
     var btn=document.getElementById("sbtn");btn.disabled=true;
     fetch(ACTION,{method:"POST",mode:"no-cors",body:fd}).finally(function(){
