@@ -34,6 +34,18 @@ h1{font-size:clamp(40px,5.6vw,72px);font-weight:300;line-height:1.08;letter-spac
 h1 .thin{font-weight:200}
 .sub{color:var(--dim);max-width:54ch;font-size:17px}
 .cta{display:inline-block;margin-top:26px;font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.14em;color:var(--abyss);background:var(--cyan);padding:13px 26px;font-weight:600;text-decoration:none}
+.livebar{position:relative;z-index:7;border-bottom:1px solid var(--edge);background:linear-gradient(90deg,rgba(79,195,255,.16),rgba(79,195,255,.05) 62%,transparent);padding:26px 28px}
+.livebar .inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.livebar .when{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.24em;color:var(--cyan);display:flex;align-items:center;gap:9px}
+.livebar .dot{width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 0 rgba(79,195,255,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 11px rgba(79,195,255,0)}100%{box-shadow:0 0 0 0 rgba(79,195,255,0)}}
+.livebar h3{font-size:clamp(22px,2.9vw,33px);font-weight:300;color:#f0f5fb;margin:7px 0 4px;letter-spacing:-.01em}
+.livebar p{color:var(--dim);font-size:14.5px;margin:0}
+.livebar .grow1{flex:1 1 320px;min-width:260px}
+.livebar .join{display:inline-flex;align-items:center;gap:11px;font-family:"IBM Plex Mono",monospace;font-size:14px;letter-spacing:.14em;color:var(--abyss);background:var(--cyan);padding:17px 32px;font-weight:600;text-decoration:none;white-space:nowrap;transition:transform .15s ease,filter .15s ease}
+.livebar .join:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.livebar .joinsub{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;color:var(--dim);margin-top:9px;text-align:center}
+@media(max-width:760px){.livebar{padding:20px}.livebar .inner{gap:18px}.livebar .join{width:100%;justify-content:center}.livebar .joinsub{text-align:left}}
 .datastrip{position:absolute;left:28px;bottom:24px;z-index:6;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;color:var(--dim)}
 .datastrip b{color:var(--cyan);font-weight:500}
 main{max-width:1080px;margin:0 auto;padding:0 28px 90px;position:relative;z-index:2}
@@ -149,6 +161,19 @@ footer{font-size:10.5px;padding:26px 18px}
 <a class="cta" href="founding/">APPLICATION FORM</a>
 </div>
 <div class="datastrip">EST <b>2026</b> · CHARTERED <b>OCT 29</b> · LAVC <b>ICC</b> · MEETS <b>HYBRID</b> · SEE SCHEDULE</div>
+<div class="livebar">
+<div class="inner">
+<div class="grow1">
+<div class="when"><span class="dot"></span>TONIGHT · WEDNESDAY 25 NOVEMBER</div>
+<h3>General meeting, 7:00&ndash;8:00 PM</h3>
+<p>Online on Google Meet. Everyone welcome &mdash; members, and anyone just curious what the club does.</p>
+</div>
+<div>
+<a class="join" href="https://meet.google.com/esu-qgyb-zqv">JOIN THE MEETING &rarr;</a>
+<span class="joinsub">meet.google.com/esu-qgyb-zqv</span>
+</div>
+</div>
+</div>
 </div>
 
 </div>
